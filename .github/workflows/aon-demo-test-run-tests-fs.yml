@@ -8,9 +8,8 @@ defaults:
     working-directory: ./aon_demo_test/
 
 env:
-  ARM_TENANT_ID: ${{ secrets.STAGING_AZURE_SP_TENANT_ID }}
-  ARM_CLIENT_ID: ${{ secrets.STAGING_AZURE_SP_APPLICATION_ID }}
-  ARM_CLIENT_SECRET: ${{ secrets.STAGING_AZURE_SP_CLIENT_SECRET }}
+  DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST_STAGING }}
+  DATABRICKS_TOKEN:  ${{ secrets.DATABRICKS_TOKEN_STAGING }}
 
 concurrency: aon-demo-test-feature-training-integration-test-staging
 
