@@ -8,7 +8,7 @@ defaults:
     working-directory: ./aon_demo_test/
 
 env:
-  DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST_STAGING }}
+
   DATABRICKS_TOKEN:  ${{ secrets.DATABRICKS_TOKEN_STAGING }}
 
 concurrency: aon-demo-test-feature-training-integration-test-staging
